@@ -4,7 +4,7 @@
     {{transaction-item-detail transaction=selectedTransactions.[0]}}
   {{/if}}
   {{#if (eq displayMode "multiple")}}
-    bbb
+    {{info-panel-idlist transactions=selectedTransactions}}
   {{/if}}
   {{#if (eq displayMode "default")}}
     Click on one or several transactions to see details
