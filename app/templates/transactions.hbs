@@ -1,9 +1,4 @@
 transactions
 
-<ul>
-  {{#each model.transactions as |transaction|}}
-    <li>{{transaction.id}}</li>
-  {{/each}}
-</ul>
+{{transaction-table transactions=model.transactions}}
 
-{{outlet}}
