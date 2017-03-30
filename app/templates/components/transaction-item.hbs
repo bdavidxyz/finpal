@@ -1,0 +1,7 @@
+<tr>
+  {{!-- <td>{{displayed_date}}</td> --}}
+  <td>{{moment-format transaction.created_at 'DD-MM-YYYY'}}</td>
+  <td>{{transaction.counterparty_name}}</td>
+  <td>{{transaction.amount}}</td>
+  <td>{{transaction.currency}}</td>
+</tr>

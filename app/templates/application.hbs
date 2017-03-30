@@ -1,8 +1,24 @@
 <div>
   Application
 </div>
-<div>
-  {{#link-to "transactions"}}transactions{{/link-to}}
+
+
+<div class="grid-3">
+    <div class="one-quarter">
+      <div>
+        {{#link-to "transactions"}}transactions{{/link-to}}
+      </div>
+    </div>
+    <div class="one-half">...</div>
+    <div class="one-quarter">...</div>
+</div>
+<div class="grid-3">
+    <div class="one-quarter">...</div>
+    <div class="one-half">{{outlet}}</div>
+    <div class="one-quarter">...</div>
 </div>
 
-{{outlet}}
+
+
+
+
