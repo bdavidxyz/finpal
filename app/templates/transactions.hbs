@@ -1,0 +1,9 @@
+transactions
+
+<ul>
+  {{#each model.transactions as |transaction|}}
+    <li>{{transaction.id}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
