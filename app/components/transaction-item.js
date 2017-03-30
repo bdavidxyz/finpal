@@ -5,6 +5,7 @@ export default Ember.Component.extend({
   messageBus: Ember.inject.service('message-bus'),
   tagName:'',
   isSelected: false,
+
   actions: {
 
     onSelect: function() {

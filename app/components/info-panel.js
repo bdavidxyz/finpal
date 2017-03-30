@@ -13,7 +13,7 @@ export default Ember.Component.extend({
   },
 
   transactionSelected(transaction) {
-    this.get('selectedTransactions').push(transaction);
+    this.get('selectedTransactions').addObject(transaction);
   },
 
   transactionUnselected(transaction) {
@@ -21,5 +21,6 @@ export default Ember.Component.extend({
       return obj.id !== transaction.id;
     }));
   }
+
 
 });
