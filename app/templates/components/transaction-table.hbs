@@ -1,14 +1,14 @@
   <table class="table transaction-table">
     <thead>
       <tr>
-        <th>Date</th>
-        <th>Counterparty Name</th>
-        <th>Payment Type</th>
-        <th>Amount</th>
+        <th {{action 'sortByDate'}}>Date</th>
+        <th {{action 'sortByCounterparty'}}>Counterparty Name</th>
+        <th {{action 'sortByPayment'}}>Payment Type</th>
+        <th {{action 'sortByAmount'}}>Amount</th>
       </tr>
     </thead>
     <tbody>
-      {{#each transactions as |transaction|}}
+      {{#each sortedTransactions as |transaction|}}
         {{transaction-item transaction=transaction}}
       {{/each}}
     </tbody>
