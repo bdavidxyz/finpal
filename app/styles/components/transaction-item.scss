@@ -1,0 +1,18 @@
+.transaction-item {
+}
+
+.transaction-item__cell {
+  cursor: pointer;
+}
+
+// Very pragmatic class naming for the exercise,
+// should find a better way to name 'true' and 'false' here.
+.is-selected.true {
+  background-color: lightblue;
+}
+.is-selected.false {
+  background-color: white;
+}
+.is-selected {
+  cursor: pointer;
+}

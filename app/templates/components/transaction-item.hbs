@@ -1,6 +1,6 @@
-<tr>
-  <td>{{moment-format transaction.created_at 'DD-MM-YYYY'}}</td>
-  <td>{{transaction.counterparty_name}}</td>
-  <td>{{transaction.operation_type}}</td>
-  <td>{{transaction.amount}} {{transaction.currency}}</td>
+<tr {{action 'onSelect'}} class='is-selected {{isSelected}}'>
+  <td class='transaction-item__cell'>{{moment-format transaction.created_at 'DD-MM-YYYY'}}</td>
+  <td class='transaction-item__cell'>{{transaction.counterparty_name}}</td>
+  <td class='transaction-item__cell'>{{transaction.operation_type}}</td>
+  <td class='transaction-item__cell'>{{transaction.amount}} {{transaction.currency}}</td>
 </tr>
