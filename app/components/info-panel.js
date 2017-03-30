@@ -6,6 +6,16 @@ export default Ember.Component.extend({
 
   selectedTransactions: [],
 
+  displayMode: Ember.computed('selectedTransactions.[]', function () {
+    if (this.get('selectedTransactions').length > 1) {
+      return 'multiple';
+    }
+    else if (this.get('selectedTransactions').length === 1) {
+      return 'single';
+    }
+    return 'default';
+  }),
+
   init() {
     this._super(...arguments);
     this.get('messageBus').subscribe('transaction-item-selected', this, this.transactionSelected);

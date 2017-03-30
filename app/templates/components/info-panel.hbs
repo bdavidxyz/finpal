@@ -1,5 +1,13 @@
 <div class="info-panel">
   <div class="info-panel-innercontainer">
-  Click on one or several transactions to see details {{displayMode}}
+  {{#if (eq displayMode "single")}}
+    {{transaction-item-detail transaction=selectedTransactions.[0]}}
+  {{/if}}
+  {{#if (eq displayMode "multiple")}}
+    bbb
+  {{/if}}
+  {{#if (eq displayMode "default")}}
+    Click on one or several transactions to see details
+  {{/if}}
   </div>
 </div>
